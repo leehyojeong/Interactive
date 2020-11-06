@@ -1,4 +1,4 @@
-const { Wave } = require("./wave");
+import { Wave } from "./wave";
 
 class App{
     constructor(){
