@@ -19,8 +19,9 @@ class App{
                 //     'A',
                 //     2,
                 //     document.body.clientWidth,
-                //     document.body.clientHeight
-                // )
+                //     document.body.clientHeight,
+                // );
+
                 this.visual = new Visual();
 
                 window.addEventListener('resize', this.resize.bind(this), false);

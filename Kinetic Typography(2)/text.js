@@ -71,6 +71,7 @@ export class Text{
             }
         }
 
+        // return particles;
         return this.getOutline(particles, density);
     } 
 
@@ -137,7 +138,7 @@ export class Text{
                     if(pointCircle(pos.x, pos.item.y, pos.x, prevY, gap)){
                         const cur = outline[outline.length - 1];
                         cur.minY = Math.min(cur.minY, pos.item.y);
-                        cur.maxY = Math.min(cur.maxY, pos.item.y);
+                        cur.maxY = Math.max(cur.maxY, pos.item.y);
                         check = 1;
                         prevY = pos.item.y;
                     }else{
